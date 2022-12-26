@@ -1,10 +1,10 @@
-# # Hello, Kami Dari Kelompok 3 Kelas SI-44-03  <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width=25> !
+## Hello, Kami Dari Kelompok 3 Kelas SI-44-03  <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width=25> !
 <div align="center">
 <img src="https://i.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.webp">
 </div>
 <br>
 <div align="center"> 
-<h3>TUGAS BESAR WEB APPLICATION DEVELOPMENT<h3>
+##TUGAS BESAR WEB APPLICATION DEVELOPMENT<h3>
 
 
 Pada tugas besar WAD ini kami membuat sebuah website bernama `Dunia Tani`. `Dunia Tani` adalah sebuah website edukasi tentang dunia pertanian dan pusat jual beli sayuran dan bibit pertanian. Website ini dibuat menggunakan [PHP](https://www.php.net/) dan [Laravel](https://laravel.com/) sebagai framework untuk Backend dan [HTML](https://en.wikipedia.org/wiki/HTML) dan [CSS](https://en.wikipedia.org/wiki/CSS) dengan framework [Bootstrap](https://getbootstrap.com/) untuk Frontend.
@@ -19,7 +19,7 @@ Kami merupakan kelompok 3 (Dunia tani) yang berasal dari kelas SI-44-03, program
 -   Fadli Izurohman (1202204033)
 -   Usein Akbar (1202204043)
 -   Ruben Adisuryo (1202200152)
-</div>
+
 
 
 
