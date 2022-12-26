@@ -19,6 +19,6 @@ Kami merupakan kelompok 3 (Dunia tani) yang berasal dari kelas SI-44-03, program
 -   Fadli Izurohman (1202204033)
 -   Usein Akbar (1202204043)
 -   Ruben Adisuryo (1202200152)
-<iframe src="https://i.makeagif.com/media/6-05-2018/P3eup1.mp4" frameborder="0"></iframe>
+<img src="https://media0.giphy.com/media/Rlwz4m0aHgXH13jyrE/giphy.gif?cid=ecf05e478h04ob0x7spccy5l3k4tr32gd5u22utg8o8n7a6u&rid=giphy.gif&ct=g">
 
 
