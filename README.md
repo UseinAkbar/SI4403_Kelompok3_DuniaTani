@@ -10,7 +10,7 @@ Pada tugas besar Pengembangan Aplikasi Website (WAD) ini kami membuat sebuah web
 ## Tentang Kami
 
 Kami merupakan kelompok 3 (Dutanesia) yang berasal dari kelas SI-44-03, program studi S1 Sistem Informasi, Telkom University. Kami beranggotakan 5 orang, diantaranya:
-<img src="[https://i.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.webp](https://i.makeagif.com/media/6-05-2018/P3eup1.gif)">
+<img src="https://i.makeagif.com/media/6-05-2018/P3eup1.gif">
 -   Rafid Fadhil (1202204021)
 -   Kemal Aziz (1202204329)
 -   Fadli Izurohman (1202204033)
