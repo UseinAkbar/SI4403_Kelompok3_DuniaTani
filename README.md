@@ -4,8 +4,8 @@
 </div>
 <br>
 <div align="center"> 
-<h2>TUGAS BESAR WEB APPLICATION DEVELOPMENT<h2>
-</div>
+<h3>TUGAS BESAR WEB APPLICATION DEVELOPMENT<h3>
+
 
 Pada tugas besar WAD ini kami membuat sebuah website bernama `Dunia Tani`. `Dunia Tani` adalah sebuah website edukasi tentang dunia pertanian dan pusat jual beli sayuran dan bibit pertanian. Website ini dibuat menggunakan [PHP](https://www.php.net/) dan [Laravel](https://laravel.com/) sebagai framework untuk Backend dan [HTML](https://en.wikipedia.org/wiki/HTML) dan [CSS](https://en.wikipedia.org/wiki/CSS) dengan framework [Bootstrap](https://getbootstrap.com/) untuk Frontend.
 
@@ -19,7 +19,7 @@ Kami merupakan kelompok 3 (Dunia tani) yang berasal dari kelas SI-44-03, program
 -   Fadli Izurohman (1202204033)
 -   Usein Akbar (1202204043)
 -   Ruben Adisuryo (1202200152)
-    
-<img src="https://i.giphy.com/media/Rlwz4m0aHgXH13jyrE/giphy.webp">
+</div>
+
 
 
