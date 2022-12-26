@@ -3,7 +3,6 @@
 <img src="https://i.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.webp">
 </div>
 <br>
-## TUGAS BESAR WEB APPLICATION DEVELOPMENT
 
 ## TUGAS BESAR WEB APPLICATION DEVELOPMENT
 Pada tugas besar WAD ini kami membuat sebuah website bernama `Dunia Tani`. `Dunia Tani` adalah sebuah website edukasi tentang dunia pertanian dan pusat jual beli sayuran dan bibit pertanian. Website ini dibuat menggunakan [PHP](https://www.php.net/) dan [Laravel](https://laravel.com/) sebagai framework untuk Backend dan [HTML](https://en.wikipedia.org/wiki/HTML) dan [CSS](https://en.wikipedia.org/wiki/CSS) dengan framework [Bootstrap](https://getbootstrap.com/) untuk Frontend.
