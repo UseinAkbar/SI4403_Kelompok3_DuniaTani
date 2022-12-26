@@ -14,9 +14,11 @@ Pada tugas besar WAD ini kami membuat sebuah website bernama `Dunia Tani`. `Duni
 Kami merupakan kelompok 3 (Dunia tani) yang berasal dari kelas SI-44-03, program studi S1 Sistem Informasi, Telkom University. Kami beranggotakan 5 orang, diantaranya:
 
 -   Rafid Fadhil (1202204021)
+    
 -   Kemal Aziz (1202204329)
 -   Fadli Izurohman (1202204033)
 -   Usein Akbar (1202204043)
 -   Ruben Adisuryo (1202200152)
+<iframe src="https://i.makeagif.com/media/6-05-2018/P3eup1.mp4" frameborder="0"></iframe>
 
 
