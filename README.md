@@ -3,7 +3,6 @@
 <img src="https://i.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.webp">
 </div>
 <br>
-<div align="center"> 
 ## TUGAS BESAR WEB APPLICATION DEVELOPMENT<h3>
 
 
