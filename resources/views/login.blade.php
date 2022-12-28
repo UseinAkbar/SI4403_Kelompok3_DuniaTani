@@ -21,7 +21,7 @@
     <section id="loginn">
         <div class="d-flex">
             {{-- <img src="asset/Login.png" alt="login" class="login-bg"> --}}
-            <img src="asset/logo.svg" alt="Dunia Tani" class="register-login__logo">
+            <img src="asset/logoblack.svg" alt="Dunia Tani" class="register-login__logo">
             <div class="login-form shadow-lg rounded border-3 border">
                 <h1 style="color: #44444; font-size: 25px;">Sign In</h1>
                 <h2 style="color: #939393; font-size: 16px; margin-top: 8px;">Sign in using personal data<br/>appropiate</h2>

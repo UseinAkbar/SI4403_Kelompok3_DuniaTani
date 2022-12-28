@@ -21,7 +21,7 @@
     <section id="register_section">
         <div class="d-flex">
             {{-- <img src="asset/register.png" alt="login" class="register-bg"> --}}
-            <img src="asset/logo.svg" alt="Dunia Tani" class="register-login__logo">
+            <img src="asset/logoblack.svg" alt="Dunia Tani" class="register-login__logo">
             <div class="register-form shadow-lg rounded border-3 border">
                 <h1 style="color: #44444; font-size: 25px;">Sign Up</h1>
                 <h2 style="color: #939393; font-size: 16px; margin-top: 8px;">Register using personal data<br/>appropiate</h2>
