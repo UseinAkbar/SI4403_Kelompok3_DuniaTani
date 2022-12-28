@@ -658,8 +658,13 @@ body {
 .text-login {
     position: absolute;
     right: 50px;
-    bottom: 0;
+    bottom: 80px;
     color: white;
+}
+
+.text-login_1 {
+    padding-bottom: 27px;
+    margin-right: 170px;
 }
 
 .login-bg {
@@ -703,4 +708,82 @@ body {
     color: white;
     font-size: 20px;
     font-weight: 600;
+}
+
+/* register style */
+
+.register-bg {
+    width: 100%;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    background-size: cover;
+}
+
+#passChar {
+    font-size: 13px;
+    margin-top: -5px;
+}
+
+.sign_in {
+    font-size: 13px;
+}
+
+.register-form {
+    background-color: white;
+    width: 460px;
+    height: 675px;
+    position: absolute;
+    margin-left: 250px;
+    margin-top: 150px;
+    padding-top: 32px;
+    padding-left: 32px;
+}
+
+.form-register {
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+}
+
+.form-register label {
+    font-size: 16px;
+    color: #444444;
+    font-weight: 600;
+}
+
+.form-register input {
+    width: 396px;
+    height: 48px;
+    border-radius: 5px;
+    border-color: #939393;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.form-register input::placeholder {
+    font-size: 13px;
+}
+
+.register-form button {
+    width: 396px;
+    height: 50px;
+    margin-top: 32px;
+    border-radius: 5px;
+    background-color: #BEAB32;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.text-register {
+    position: absolute;
+    right: 200px;
+    bottom: 80px;
+    color: white;
+}
+
+.register-login__logo {
+    position: absolute;
+    margin: 39px 0 0 38px;
 }

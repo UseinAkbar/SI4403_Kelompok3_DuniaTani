@@ -7,10 +7,21 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 
+<style>
+    body {
+        background: url(asset/Login.png);
+        background-attachment: fixed;
+        background-position: center;
+        background-size: 100%;
+        background-position-y: 85%;
+    }
+</style>
+
 <body>
     <section id="loginn">
         <div class="d-flex">
-            <img src="asset/Login.png" alt="login" class="login-bg">
+            {{-- <img src="asset/Login.png" alt="login" class="login-bg"> --}}
+            <img src="asset/logo.svg" alt="Dunia Tani" class="register-login__logo">
             <div class="login-form shadow-lg rounded border-3 border">
                 <h1 style="color: #44444; font-size: 25px;">Sign In</h1>
                 <h2 style="color: #939393; font-size: 16px; margin-top: 8px;">Sign in using personal data<br/>appropiate</h2>
@@ -24,7 +35,7 @@
                 <p style="color: #9F9F9F; margin-top: 32px;">You don't have an account yet? <span style="color: #7aa60b;"><a>Sign Up</a></span></p>
             </div>
             <div class="text-login">
-                <h1 style="font-size: 49px; font-weight: 700">Ingin Mengetahui tentang<br />pertaninan & membeli hasil<br/>tani ?</h1>
+                <h1 style="font-size: 49px; font-weight: 700;" class="text-login_1">Ingin Mengetahui tentang<br />pertaninan & membeli hasil<br/>tani ?</h1>
                 <h2 style="font-size: 31px; font-weight: 400">Nikmati kemudahan untuk mempelajari<br/>pertanian dan membeli hasil tani yang<br/>segar.</h2>
             </div>
         </div>
