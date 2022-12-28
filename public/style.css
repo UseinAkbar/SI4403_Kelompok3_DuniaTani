@@ -595,6 +595,7 @@ body {
 }
 
 .footer__profile p {
+    width: 80%;
     font-size: 2rem;
     font-weight: 400;
     text-align: justify;
