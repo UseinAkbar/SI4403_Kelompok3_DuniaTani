@@ -2,18 +2,34 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Login</title>
+    @include("partial.header")
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/index.css" />
 </head>
 
 <body>
     <section id="loginn">
+        <div class="d-flex">
+            <img src="asset/Login.png" alt="login" class="login-bg">
+            <div class="login-form shadow-lg rounded border-3 border">
+                <h1 style="color: #44444; font-size: 25px;">Sign In</h1>
+                <h2 style="color: #939393; font-size: 16px; margin-top: 8px;">Sign in using personal data<br/>appropiate</h2>
+                <form action="" class="form-login">
+                    <label for="username">Username</label>
+                    <input style="padding-left: 16px" type="text" placeholder="enter your username">
+                    <label for="password">Password</label>
+                    <input style="padding-left: 16px" type="password" placeholder="enter your password">
+                </form>
+                <button>Login</button>
+                <p style="color: #9F9F9F; margin-top: 32px;">You don't have an account yet? <span style="color: #7aa60b;"><a>Sign Up</a></span></p>
+            </div>
+            <div class="text-login">
+                <h1 style="font-size: 49px; font-weight: 700">Ingin Mengetahui tentang<br />pertaninan & membeli hasil<br/>tani ?</h1>
+                <h2 style="font-size: 31px; font-weight: 400">Nikmati kemudahan untuk mempelajari<br/>pertanian dan membeli hasil tani yang<br/>segar.</h2>
+            </div>
+        </div>
 
-        <div class="container-fluid">
+        {{-- <div class="container-fluid">
             <div class="row align-items-center">
                 <div class="col-md-6 min-vh-100 left"></div>
                 <div class="col-md-6">
@@ -65,7 +81,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
