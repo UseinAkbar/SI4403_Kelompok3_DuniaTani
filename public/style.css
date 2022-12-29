@@ -657,7 +657,7 @@ body {
 
 .text-login {
     position: absolute;
-    right: 50px;
+    right: -85px;
     bottom: 80px;
     color: white;
 }
@@ -737,8 +737,8 @@ body {
     width: 460px;
     height: 675px;
     position: absolute;
-    margin-left: 250px;
-    margin-top: 150px;
+    margin-left: 400px;
+    margin-top: 25px;
     padding-top: 32px;
     padding-left: 32px;
 }
@@ -782,7 +782,7 @@ body {
 
 .text-register {
     position: absolute;
-    right: 200px;
+    right: 70px;
     bottom: 80px;
     color: white;
 }
