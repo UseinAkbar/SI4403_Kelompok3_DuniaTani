@@ -6,6 +6,6 @@
         <a href="" class="nav__link">Community</a>
         <a href="" class="nav__link">Courses</a>
         <a href="" class="nav__link nav-redirect">Become a Guru Tani</a>
-        <a href="" class="nav__link nav-btn">Login</a>
+        <a href="/login" class="nav__link nav-btn">Login</a>
     </div>
 </nav>
