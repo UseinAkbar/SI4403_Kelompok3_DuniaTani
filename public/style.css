@@ -647,7 +647,7 @@ body {
 .login-form {
     background-color: white;
     width: 460px;
-    height: 473px;
+    height: 485px;
     position: absolute;
     margin-left: 250px;
     margin-top: 200px;
@@ -695,6 +695,10 @@ body {
 }
 
 .form-login input::placeholder {
+    font-size: 13px;
+}
+
+.sign_up {
     font-size: 13px;
 }
 

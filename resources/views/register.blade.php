@@ -37,7 +37,7 @@
                     <div id="passChar" class="form-text">Between 8 and 72 characters</div>
                 </form>
                 <button>Join for free</button>
-                <p style="color: #9F9F9F; margin-top: 32px;" class="sign_in">You don't have an account yet? <span style="color: #7aa60b;"><a>Sign Up</a></span></p>
+                <p style="color: #9F9F9F; margin-top: 32px;" class="sign_in">You already have an account? <span style="color: #7aa60b;"><a>Sign In</a></span></p>
             </div>
             <div class="text-register">
                 <h1 style="font-size: 49px; font-weight: 700; padding-bottom: 27px">Ayo bergabung dengan<br />dunia tani untuk<br/>Indonesia lebih maju</h1>

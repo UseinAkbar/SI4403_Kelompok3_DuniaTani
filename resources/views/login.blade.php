@@ -32,7 +32,7 @@
                     <input style="padding-left: 16px" type="password" placeholder="enter your password">
                 </form>
                 <button>Login</button>
-                <p style="color: #9F9F9F; margin-top: 32px;">You don't have an account yet? <span style="color: #7aa60b;"><a>Sign Up</a></span></p>
+                <p style="color: #9F9F9F; margin-top: 32px;" class="sign_up">You don't have an account yet? <span style="color: #7aa60b;"><a>Sign Up</a></span></p>
             </div>
             <div class="text-login">
                 <h1 style="font-size: 49px; font-weight: 700;" class="text-login_1">Ingin Mengetahui tentang<br />pertaninan & membeli hasil<br/>tani ?</h1>
