@@ -14,7 +14,7 @@ class CreateGuruTaniTable extends Migration
     public function up()
     {
         Schema::create('guru_tani', function (Blueprint $table) {
-            $table->id();
+            $table->id('guruTani_id');
             $table->string('name');
             $table->string('username')->unique();
             $table->string('email')->unique();
