@@ -15,7 +15,7 @@
                     <a href="" class="header__cta cta">Join for Free</a>
                     <a href="" class="header__cta cta">View all event</a>
                 </div>
-                <iframe class="header__preview" width="500" height="300" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                <iframe class="header__preview" width="500" height="300" src="https://www.youtube.com/embed/nYSDcGhYy-0">
                 </iframe>
             </div>
         </header>
@@ -212,5 +212,6 @@
     </div>
     
     @include('partial.footer')
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

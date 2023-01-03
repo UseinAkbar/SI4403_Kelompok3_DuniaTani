@@ -46,7 +46,8 @@ body {
     /* grid-gap: 3rem; */
 }
 
-.cta {
+.cta,
+.cta:visited {
     text-decoration: none;
     text-align: center;
     font-size: 2rem;
@@ -59,8 +60,51 @@ body {
     transition: 0.1s ease;
 }
 
+.cta:hover {
+    color: #fff;
+}
+
 .cta:active {
     transform: scale(0.95);
+}
+
+.dropdown-toggle {
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    background-color: transparent;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #F9F5C8;
+}
+
+.dropdown-toggle.show,
+.dropdown-toggle:active,
+.dropdown-toggle:hover {
+    background-color: #fcfaeb !important;
+    color: #000 !important;
+}
+
+.dropdown-menu {
+    /* display: flex;
+    flex-direction: column;
+    gap: 1.5rem; */
+    background-color: #fff;
+    padding: 1.5rem 0;
+
+}
+
+.dropdown-item {
+    padding: 1rem 2.5rem;
+    font-size: 1.6rem;
+    color: #848484;
+}
+
+.dropdown-item:hover {
+    color: #925A06;
 }
 
 .nav {
