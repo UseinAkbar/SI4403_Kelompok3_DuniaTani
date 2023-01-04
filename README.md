@@ -14,7 +14,7 @@ Kami merupakan kelompok 3 (Dutanesia) yang berasal dari kelas SI-44-03, program 
 -   Kemal Aziz (1202204329)
 -   Fadli Izurohman (1202204033)
 -   Usein Akbar (1202204043)
--   Ruben Adisuryo (1202200152)
+-   Ruben Adisuryo N (1202200152)
 
 ## Repository Structure
 
@@ -22,6 +22,3 @@ The repository is structured as follows:
 
 -   `main` is main branch of the repository and contains the latest stable version of the code.
 -   `dev` is the development branch of the repository and contains the latest development version of the code.
-
-
-
