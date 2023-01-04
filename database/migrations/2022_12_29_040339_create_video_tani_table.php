@@ -18,6 +18,7 @@ class VideoTani extends Migration
             $table->string('title');
             $table->foreign('guruTani_id')->references('id')->on('guru_tani');
             $table->date('tanggalvid');
+            $table->string('link');
         });
     }
 
