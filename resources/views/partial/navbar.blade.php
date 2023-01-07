@@ -1,5 +1,5 @@
 <nav class="nav">
-    <img src="asset/logo.svg" alt="Dunia Tani" class="nav__logo">
+    <img src="../asset/logo.svg" alt="Dunia Tani" class="nav__logo">
     <div class="nav__box">
         <a href="/" class="nav__link">Home</a>
         <a href="" class="nav__link">Events</a>

@@ -5,6 +5,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\CourseController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,3 +29,11 @@ Route::post('/register', [RegisterController::class, 'store']);
 
 Route::get('/course', [CourseController::class, 'index']);
 Route::get('/course-detail', [CourseController::class, 'displayCourseDetail']);
+
+Route::get('/course-checkout', [CourseController::class, 'displayCourseCheckout']);
+Route::get('/course-payment', [CourseController::class, 'displayCoursePayment']);
+Route::get('/course-checkout-success', [CourseController::class, 'displayCourseSuccess']);
+
+Route::get('/user/setting', [UserController::class, 'setting']);
+Route::get('/user/order', [UserController::class, 'myorder']);
+Route::get('/user/class', [UserController::class, 'myclass']);

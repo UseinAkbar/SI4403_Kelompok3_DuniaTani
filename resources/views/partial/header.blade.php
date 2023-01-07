@@ -8,5 +8,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/course-style.css">
+    <link rel="stylesheet" href="/course-checkout.css">
+    <link rel="stylesheet" href="/course-payment.css">
+    <link rel="stylesheet" href="/course-success.css">
+    <link rel="stylesheet" href="/dashboard-user.css">
+    <link rel="stylesheet" href="/dashboard-guru.css">
     <title>Dunia Tani | Inlusive platform for agriculture enthusiast</title>
 </head>

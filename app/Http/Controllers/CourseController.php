@@ -17,4 +17,22 @@ class CourseController extends Controller
             'title' => 'Course Detail'
         ]);
     }
+
+    public function displayCourseCheckout(){
+        return view('course-checkout', [
+            'title' => 'Course Checkout'
+        ]);
+    }
+
+    public function displayCoursePayment(){
+        return view('course-payment', [
+            'title' => 'Course Payment'
+        ]);
+    }
+
+    public function displayCourseSuccess(){
+        return view('course-success', [
+            'title' => 'Course Checkout Successful'
+        ]);
+    }
 }

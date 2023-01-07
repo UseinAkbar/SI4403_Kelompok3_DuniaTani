@@ -16,30 +16,11 @@
             </form>
             <div class="course-box">
                 <div class="course-sideFilter">
-                    <div class="course-sort">
-                        <h2>Sort</h2>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="new release" name="new-release" id="new-release">
-                            <label class="form-check-label" for="new-release">New Release</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="popular" name="popular" id="popular">
-                            <label class="form-check-label" for="popular">Popular</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="on promo" name="on-promo" id="on-promo">
-                            <label class="form-check-label" for="on-promo">On Promo</label>
-                        </div>
-                    </div>
                     <div class="course-type">
                         <h2>Type</h2>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="starter" name="starter" id="starter">
-                            <label class="form-check-label" for="starter">Starter (Rp 0)</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="freemium" name="freemium" id="freemium">
-                            <label class="form-check-label" for="freemium">Freemium (Rp 0)</label>
+                            <input class="form-check-input" type="checkbox" value="free" name="free" id="free">
+                            <label class="form-check-label" for="free">Free</label>
                         </div>
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="premium" name="premium" id="premium">

@@ -1,7 +1,7 @@
 <footer class="footer">
     <div class="footer__box">
         <div class="footer__profile">
-            <img src="asset/logo.svg" alt="">
+            <img src="../asset/logo.svg" alt="">
             <p>
                 learning about how to plant, how to choose good seeds, the selection of the latest tools and technology for agricultural development in Indonesia.
             </p>
