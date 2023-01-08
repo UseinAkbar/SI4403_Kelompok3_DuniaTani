@@ -1,4 +1,4 @@
-.sidebar-user {
+.sidebar {
     display: grid;
     grid-template-columns: max-content;
     grid-auto-rows: min-content;
@@ -7,35 +7,35 @@
     padding: 5rem 9rem;
 }
 
-.sidebar-user-profile {
+.sidebar-profile {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     color: #000;
 }
 
-.sidebar-user-profile img {
+.sidebar-profile img {
     width: 8rem;
 }
 
-.sidebar-user-profile h1 {
+.sidebar-profile h1 {
     font-size: 2.4rem;
     font-weight: 700;
 }
 
-.sidebar-user-profile p {
+.sidebar-profile p {
     font-size: 1.6rem;
     color: #848484;
 }
 
-.sidebar-user-nav {
+.sidebar-nav {
     display: flex;
     flex-direction: column;
     gap: 3rem;
 }
 
-.sidebar-user-nav a,
-.sidebar-user-nav a:visited {
+.sidebar-nav a,
+.sidebar-nav a:visited {
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -53,7 +53,7 @@
     font-size: 1.4rem;
 }
 
-.setting-box form {
+.dashboard-form {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 3rem;
@@ -63,18 +63,18 @@
     width: 70%;
 }
 
-.setting-input-grup {
+.dashboard-input-grup {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-.setting-input-grup label {
+.dashboard-input-grup label {
     font-size: 1.6rem;
     font-weight: 600;
 }
 
-.setting-input-grup input {
+.dashboard-input-grup input {
     border: 1px solid #939393;
     outline: none;
     padding: 1rem 2rem;
@@ -83,7 +83,7 @@
     font-weight: 500;
 }
 
-.setting-input-grup input::placeholder {
+.dashboard-input-grup input::placeholder {
     color: #939393;
 }
 
