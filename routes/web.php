@@ -36,3 +36,4 @@ Route::put('/user/{user}', [UserController::class, 'update']);
 Route::get('/gurutani/addclass', [GuruController::class, 'addclass']);
 Route::get('/gurutani/inbox', [GuruController::class, 'myinbox']);
 Route::get('/gurutani/setting', [GuruController::class, 'setting']);
+Route::get('/gurutani/login', [GuruController::class, 'loginGuru']);

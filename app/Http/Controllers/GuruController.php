@@ -23,4 +23,10 @@ class GuruController extends Controller
             'title' => 'Setting Profile'
         ]);
     }
+
+    public function loginGuru(){
+        return view('guru/login-guru', [
+            'title' => 'Login Guru Tani'
+        ]);
+    }
 }
