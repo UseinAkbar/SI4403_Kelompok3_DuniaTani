@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-    @include('partial.header')
+@include('partial.header')
+
 <body>
     <div class="app">
         @include('partial.navbar')
@@ -8,14 +9,20 @@
             <img src="asset/banner.png" alt="" class="header__banner">
             <div class="header__box">
                 <h1 class="header__title">We teach you how to grow very fresh produce</h1>
-                <h2 class="header__subtitle">learning about how to plant, how to choose good seeds, the selection 
+                <h2 class="header__subtitle">learning about how to plant, how to choose good seeds, the selection
                     of the latest tools and technology for agricultural development in Indonesia.
                 </h2>
                 <div class="header__box-btn">
-                    <a href="" class="header__cta cta">Join for Free</a>
+                    @auth
                     <a href="" class="header__cta cta">View all event</a>
+                    @else
+                    <a href="/register" class="header__cta cta">Join for Free</a>
+                    <a href="" class="header__cta cta">View all event</a>
+                    @endauth
+
                 </div>
-                <iframe class="header__preview" width="500" height="300" src="https://www.youtube.com/embed/nYSDcGhYy-0">
+                <iframe class="header__preview" width="500" height="300"
+                    src="https://www.youtube.com/embed/nYSDcGhYy-0">
                 </iframe>
             </div>
         </header>
@@ -56,7 +63,8 @@
                     <img src="asset/bag.svg" alt="">
                     <h1>Shopping for Agricultural Products</h1>
                     <p>
-                        Get the best agricultural products grown with the latest methods and get very fresh agricultural products.
+                        Get the best agricultural products grown with the latest methods and get very fresh agricultural
+                        products.
                     </p>
                 </div>
                 <div class="benefit__tiles">
@@ -85,7 +93,8 @@
                     <h2 class="course__subtle">WORLD CLASS FARMERS</h2>
                     <h1 class="course__title">Learn to advance Indonesian agriculture</h1>
                     <p class="course__desc">
-                        World Class Farming is the best solution for teachers who want to improve their skills in the field of agriculture in a fun way, study the available classes and become an expert!
+                        World Class Farming is the best solution for teachers who want to improve their skills in the
+                        field of agriculture in a fun way, study the available classes and become an expert!
                     </p>
                 </div>
                 <a href="" class="course__cta cta">Lihat Kelas Lainnya</a>
@@ -117,7 +126,8 @@
                 <div class="course__card">
                     <img src="asset/course-2.png" alt="" class="course__img">
                     <h1>Monitor Hasil Pertanian Menggunakan Teknologi</h1>
-                    <p>Memudahkan melihat hasil pertanian dengan menggunakan aplikasi yang terbaik diciptakan oleh anak bangsa</p>
+                    <p>Memudahkan melihat hasil pertanian dengan menggunakan aplikasi yang terbaik diciptakan oleh anak
+                        bangsa</p>
                     <div class="course__detail">
                         <span>
                             <img src="asset/book.svg" alt="">
@@ -140,7 +150,8 @@
                 <div class="course__card">
                     <img src="asset/course-3.png" alt="" class="course__img">
                     <h1>Pupuk Yang Tepat Untuk perkembangan tanaman</h1>
-                    <p>Memudahkan melihat hasil pertanian dengan menggunakan aplikasi yang terbaik diciptakan oleh anak bangsa</p>
+                    <p>Memudahkan melihat hasil pertanian dengan menggunakan aplikasi yang terbaik diciptakan oleh anak
+                        bangsa</p>
                     <div class="course__detail">
                         <span>
                             <img src="asset/book.svg" alt="">
@@ -165,7 +176,8 @@
         <section class="event">
             <h1 class="event__title">Ready to get started?</h1>
             <p class="event__desc">
-                World Class Farming is the best solution for teachers who want to improve their skills in the field of agriculture in a fun way, study the available classes 
+                World Class Farming is the best solution for teachers who want to improve their skills in the field of
+                agriculture in a fun way, study the available classes
                 and become an expert!
             </p>
             <a href="" class="event__cta cta">Bergabunglah secara gratis</a>
@@ -210,8 +222,9 @@
             </div>
         </section>
     </div>
-    
+
     @include('partial.footer')
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

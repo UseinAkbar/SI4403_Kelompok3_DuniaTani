@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Course;
-use App\Models\Gurutani;
+use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Cookie;
 
-class CourseController extends Controller
+class UserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,11 +15,6 @@ class CourseController extends Controller
      */
     public function index()
     {
-        $course = Course::all();
-        return view('course', [
-            'title' => 'Course',
-            'course' => $course
-        ]);
     }
 
     /**
@@ -46,46 +41,62 @@ class CourseController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Course  $course
+     * @param  \App\Models\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function show(Course $course)
+    public function show(User $user)
     {
-        return view('course-detail', [
-            'course' => $course
-        ]);
+        //
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Course  $course
+     * @param  \App\Models\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function edit(Course $course)
+    public function edit(User $user)
     {
-        //
+        
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Course  $course
+     * @param  \App\Models\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Course $course)
+    public function update(Request $request, User $user)
     {
-        //
+        if($request->password==null){
+            User::where('id', $user->id)->update(
+                [   
+                    'name'=>$request->name,
+                    'username'=>$request->username,
+                ]
+                );
+        } else {
+            User::where('id', $user->id)->update(
+                [   
+                    'name'=>$request->name,
+                    'username'=>$request->username,
+                    'password'=>$request->password
+                ]
+                );
+        }
+        return redirect("/user");
+
+        
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Course  $course
+     * @param  \App\Models\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Course $course)
+    public function destroy(User $user)
     {
         //
     }

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateGuruTaniTable extends Migration
+class CreateGuruTanisTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,8 @@ class CreateGuruTaniTable extends Migration
      */
     public function up()
     {
-        Schema::create('guru_tani', function (Blueprint $table) {
-            $table->id('guruTani_id');
+        Schema::create('gurutanis', function (Blueprint $table) {
+            $table->id();
             $table->string('name');
             $table->string('username')->unique();
             $table->string('email')->unique();
@@ -31,6 +31,6 @@ class CreateGuruTaniTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('guru_tani');
+        Schema::dropIfExists('guru_tanis');
     }
 }

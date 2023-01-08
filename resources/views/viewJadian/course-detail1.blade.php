@@ -19,10 +19,14 @@
             <div class="course-detail-box">
                 <div class="course-detail-desc">
                     <h2 class="course-detail-subtle">COURSE DETAIL</h2>
-                    <h1 class="course-detail-title">{{ $course->title }}</h1>
-                    <img src="asset/course-detail.png" alt="aset">
+                    <h1 class="course-detail-title">Monitor Hasil Pertanian Menggunakan Teknologi</h1>
+                    <img src="asset/course-detail.png" alt="">
                     <p>
-                        {{ $course->description }}
+                        Teknologi merupakan penerapan maupun pengembangan dari sebuah ilmu alat mesin. Dimana alat-alat
+                        tersebut dibuat dan didesain sedemikian rupa sehingga dapat membantu manusia mengelola ataupun
+                        menyelesaikan permasalahan kehidupan yang ada.Sedangkan pertanian sendiri digambarkan sebagai
+                        usaha manusia dalam menghasilkan bahan pangan, ternak, maupun produk lahan yang memanfaatkan
+                        sumber daya alam, baik dari tumbuhan maupun hewan yang sudah tersedia.
                     </p>
                 </div>
                 <div class="course-detail-feature">
@@ -33,23 +37,23 @@
                     </div>
                     <div>
                         <span>Skill Level</span>
-                        <span>{{ $course->skillLevel }}</span>
+                        <span>All Level</span>
                     </div>
                     <div>
                         <span>Language</span>
-                        <span>{{ $course->languange }}</span>
+                        <span>English</span>
                     </div>
                     <div>
                         <span>Instructur</span>
-                        <span>{{ $course->gurutani->name }}</span>
+                        <span>Rachmat Effendi</span>
                     </div>
                     <div>
                         <span>Rating</span>
-                        <span>{{ $course->rating }}</span>
+                        <span>4.7 / 5</span>
                     </div>
                     <div>
                         <span>Price</span>
-                        <span class="course-detail-price">{{ $course->price }}</span>
+                        <span class="course-detail-price">Rp125.000</span>
                     </div>
                     <a href="" class="course-detail-cta cta">Enroll Now</a>
                 </div>
@@ -78,10 +82,10 @@
                 </a>
             </div>
         </section>
+        @include('partial.footer')
     </div>
 
 
-    @include('partial.footer')
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
