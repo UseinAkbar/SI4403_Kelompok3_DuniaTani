@@ -1,3 +1,28 @@
 .addclass-video {
     border: none !important;
 }
+
+.inbox-img {
+    width: 4rem;
+    height: 5rem;
+    object-fit: cover;
+}
+
+.inbox-invoice {
+    background-color: #DEDEDE !important;
+    color: #000 !important;
+    font-size: 1.2rem;
+    padding: 4px;
+    border: none;
+}
+
+.inbox-idclass,
+.inbox-idclass:visited {
+    text-decoration: none;
+    color: #000;
+}
+
+.inbox-idclass:hover {
+    text-decoration: underline;
+    color: blue;
+}

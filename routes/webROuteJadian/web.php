@@ -6,6 +6,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\CourseController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\GuruController;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,3 +38,5 @@ Route::get('/course-checkout-success', [CourseController::class, 'displayCourseS
 Route::get('/user/setting', [UserController::class, 'setting']);
 Route::get('/user/order', [UserController::class, 'myorder']);
 Route::get('/user/class', [UserController::class, 'myclass']);
+
+Route::get('/guru/addclass', [GuruController::class, 'addclass']);

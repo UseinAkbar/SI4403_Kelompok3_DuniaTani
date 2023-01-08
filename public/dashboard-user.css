@@ -113,8 +113,9 @@
 .order-action-cta-secondary {
     background-color: transparent;
     color: #000 !important;
-    border: 1px solid #beab32;
-    font-weight: 400;
+    border: .8px solid #000 !important;
+    padding: 4px;
+    /* font-weight: 400; */
 }
 
 .order-table {

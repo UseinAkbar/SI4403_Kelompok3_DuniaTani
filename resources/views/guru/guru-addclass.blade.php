@@ -19,23 +19,23 @@
 
                     <div class="addclass-input-grup dashboard-input-grup">
                         <label for="course">Course Name</label>
-                        <input type="text" name="course" id="course" value="" placeholder="Enter course name">
+                        <input type="text" name="course" id="course" value="" placeholder="Enter course name" required>
                     </div>
                     <div class="addclass-input-grup dashboard-input-grup">
                         <label for="title">Course Title</label>
-                        <input type="text" name="title" id="title" value="" placeholder="Enter course title">
+                        <input type="text" name="title" id="title" value="" placeholder="Enter course title" required>
                     </div>
                     <div class="addclass-input-grup dashboard-input-grup">
                         <label for="description">Course Description</label>
-                        <input type="text" name="description" id="description" value="" placeholder="Enter course description">
+                        <input type="text" name="description" id="description" value="" placeholder="Enter course description" required>
                     </div>
                     <div class="addclass-input-grup dashboard-input-grup">
                         <label for="harga">Course Price</label>
-                        <input type="number" name="harga" id="harga" min="0" value="" placeholder="Enter course price">
+                        <input type="number" name="harga" id="harga" min="0" value="" placeholder="Enter course price" required>
                     </div>
                     <div class="addclass-input-grup dashboard-input-grup">
                         <label for="course-vid">Course Video</label>
-                        <input type="file" name="course-vid" id="course-vid" class="addclass-video" class="" accept="image/*" class="setting-edit-photo">
+                        <input type="file" name="course-vid" id="course-vid" class="addclass-video" class="" accept="image/*" class="setting-edit-photo" required>
                     </div>
                     <button class="addclass-cta cta" type="submit">Submit</button>
                 </form>

@@ -5,12 +5,12 @@
         <p>Guru Tani</p>
     </div>
     <nav class="sidebar-gurutani-nav sidebar-nav">
-        <a href="/gurutani/class">
+        <a href="/gurutani/inbox">
             <img src="../asset/kelas.svg" alt="">
             My Inbox
         </a>
-        <a href="/gurutani/order">
-            <img src="../asset/order.svg" alt="">
+        <a href="/gurutani/addclass">
+            <img src="../asset/video.svg" alt="">
             Add Class
         </a>
         <a href="/gurutani/setting">
