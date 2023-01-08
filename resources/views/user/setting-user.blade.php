@@ -10,7 +10,7 @@
             <div class="setting-box dashboard-box">
                 <h1>Setting</h1>
                 <p>Enter valid information to make the learning process easier</p>
-                <form action="">
+                <form action="" class="dashboard-form">
                     @csrf
                     <div class="setting-subtle dashboard-subtle">
                         <img src="../asset/edit.svg" alt="">
@@ -19,19 +19,19 @@
                     <img src="../asset/user.png" alt="">
                     <input type="file" name="photo" id="photo" class="setting-photo" accept="image/*" placeholder="Change photo" class="setting-edit-photo">
 
-                    <div class="setting-input-grup">
+                    <div class="setting-input-grup dashboard-input-grup">
                         <label for="username">Name (Max. 50 characters)</label>
                         <input type="text" name="username" id="username" value="" placeholder="Enter your username">
                     </div>
-                    <div class="setting-input-grup">
+                    <div class="setting-input-grup dashboard-input-grup">
                         <label for="email">Username</label>
                         <input type="email" name="email" id="email" value="" placeholder="Enter your email">
                     </div>
-                    <div class="setting-input-grup">
+                    <div class="setting-input-grup dashboard-input-grup">
                         <label for="pass">New Password (at least 6 characters)</label>
                         <input type="password" name="pass" id="pass" value="" placeholder="Enter your password">
                     </div>
-                    <div class="setting-input-grup">
+                    <div class="setting-input-grup dashboard-input-grup">
                         <label for="new-pass">Confirm New Password</label>
                         <input type="password" name="new-pass" id="new-pass" value="" placeholder="Confirm your password">
                     </div>

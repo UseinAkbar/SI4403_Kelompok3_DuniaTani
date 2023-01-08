@@ -1,10 +1,10 @@
-<div class="sidebar-user">
-    <div class="sidebar-user-profile">
+<div class="sidebar-user sidebar">
+    <div class="sidebar-user-profile sidebar-profile">
         <img src="../asset/user.png" alt="user image">
         <h1>Artur Krisna</h1>
         <p>Student</p>
     </div>
-    <nav class="sidebar-user-nav">
+    <nav class="sidebar-user-nav sidebar-nav">
         <a href="/user/class">
             <img src="../asset/kelas.svg" alt="">
             My Class
