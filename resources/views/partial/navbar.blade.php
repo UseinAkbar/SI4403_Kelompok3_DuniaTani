@@ -5,7 +5,7 @@
         <a href="" class="nav__link">Events</a>
         <a href="" class="nav__link">Community</a>
         <a href="/course" class="nav__link">Courses</a>
-        <a href="" class="nav__link nav-redirect">Become a Guru Tani</a>
+        <a href="/gurutani/login" class="nav__link nav-redirect">Become a Guru Tani</a>
         @auth
         <div class="dropdown" id="">
             <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
