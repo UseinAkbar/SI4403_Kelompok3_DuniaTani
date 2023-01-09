@@ -26,6 +26,14 @@ body {
                 <h1 style="color: #44444; font-size: 25px;">Sign In</h1>
                 <h2 style="color: #939393; font-size: 16px; margin-top: 8px;">Sign in using personal
                     data<br />appropiate</h2>
+
+                @if(session()->has('success'))
+                <div class="alert alert-success alert-dismissible fade show fs-5" role="alert">
+                    {{ session('success') }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                @endif
+
                 <form action="/login" class="form-login" method="post">
                     @csrf
                     <label for="username">Username</label>

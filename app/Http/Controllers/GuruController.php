@@ -1,7 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\User;
+use App\Models\Gurutani;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -32,6 +33,50 @@ class GuruController extends Controller
             'title' => 'Login Guru Tani'
         ]);
     }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \App\Models\User  $user
+     * @param  \App\Models\Gurutani  $user
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, User $user)
+    {
+        if($request->password==null){
+            User::where('id', $user->id)->update(
+                [   
+                    'username'=>$request->username,
+                ]
+                );
+            Gurutani::where('id', $user->id)->update(
+                [   
+                    'username'=>$request->username,
+                ]
+                );
+        $request->session()->flash('success', 'data berhasil diubah gan');
+
+        } else {
+            User::where('id', $user->id)->update(
+                [   
+                    'username'=>$request->username,
+                    'password'=>$request->password
+                ]
+                );
+            Gurutani::where('id', $user->id)->update(
+                [   
+                    'username'=>$request->username,
+                    'password'=>$request->password
+                ]
+                );
+        $request->session()->flash('success', 'data berhasil diubah gan');
+            
+        }
+
+        return redirect("/gurutani/setting");
+    }
+
     // public function authenticate(Request $request){
     //     $credentials= $request->validate([
     //         'username'=>'required',

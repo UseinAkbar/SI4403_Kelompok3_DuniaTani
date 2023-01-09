@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Course;
 use App\Models\Gurutani;
 use Illuminate\Http\Request;
+use Illuminate\Routing\Controller;
 
 class CourseController extends Controller
 {
@@ -69,7 +70,7 @@ class CourseController extends Controller
      */
     public function show(Course $course)
     {
-        return view('course-detail', [
+        return view ('course-detail', [
             'course' => $course
         ]);
     }

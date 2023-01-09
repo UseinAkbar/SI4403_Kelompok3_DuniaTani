@@ -47,7 +47,7 @@
                         <span>Price</span>
                         <span class="course-detail-price">{{ $course->price }}</span>
                     </div>
-                    <a href="/course-checkout/{{$course->id}}" class="course-detail-cta cta">Enroll Now</a>
+                    <a href="/course-checkout/{{ $course->id }}" class="course-detail-cta cta">Enroll Now</a>
                 </div>
             </div>
         </section>
