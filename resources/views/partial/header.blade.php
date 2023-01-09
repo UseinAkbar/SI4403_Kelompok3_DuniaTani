@@ -13,5 +13,7 @@
     <link rel="stylesheet" href="/course-success.css">
     <link rel="stylesheet" href="/dashboard-user.css">
     <link rel="stylesheet" href="/dashboard-guru.css">
+    <link rel="stylesheet" href="/event.css">
+    <link rel="stylesheet" href="/community.css">
     <title>Dunia Tani | Inlusive platform for agriculture enthusiast</title>
 </head>

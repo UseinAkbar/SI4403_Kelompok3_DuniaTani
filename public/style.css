@@ -206,6 +206,7 @@ body {
     grid-auto-rows: min-content;
     justify-items: center;
     align-items: center;
+    height: calc(100vh - 8.5rem);
 }
 
 .header__banner,

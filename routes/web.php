@@ -8,6 +8,8 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\CourseController;
 use App\Http\Controllers\PaymentController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\EventController;
+use App\Http\Controllers\CommunityController;
 
 /*
 |--------------------------------------------------------------------------
@@ -50,3 +52,6 @@ Route::get('/gurutani/login', [GuruController::class, 'loginGuru']);
 Route::post('/gurutani/login', [LoginController::class, 'authenticate']);
 Route::post('/gurutani/addclass', [CourseController::class, 'store']);
 Route::post('/logout', [LoginController::class, 'logout']);
+
+Route::get('/event', [EventController::class, 'displayEvent']);
+Route::get('/community', [CommunityController::class, 'displayCommunity']);
