@@ -21,13 +21,13 @@
                     @endauth
 
                 </div>
-                <iframe class="header__preview" width="500" height="300"
-                    src="https://www.youtube.com/embed/nYSDcGhYy-0">
+                <iframe class="header__preview" width="900" height="500"
+                    src="https://www.youtube.com/embed/nYSDcGhYy-0" style="margin-top: 50px">
                 </iframe>
             </div>
         </header>
         <section class="sponsor">
-            <h1 class="sponsor__title">Sponsored by beloved partners</h1>
+            <h1 class="sponsor__title" style="margin-top: 350px">Sponsored by beloved partners</h1>
             <div class="sponsor__logo-box">
                 <img src="asset/tanihub.svg" alt="" class="sponsor__logo">
                 <img src="asset/amazon.svg" alt="" class="sponsor__logo">
