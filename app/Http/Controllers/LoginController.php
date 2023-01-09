@@ -20,8 +20,14 @@ class LoginController extends Controller
         ]);
 
         if(Auth::attempt($credentials)){
+            $user = Auth::getUser();
             $request->session()->regenerate();
-            return redirect()->intended('/');
+
+            if($user->role === 'pelajar'){
+                return redirect()->intended('/');
+            } else {
+                return redirect()->intended('/gurutani/inbox');
+            }
         }
 
         return back()->with('loginError', 'Login gagal, gan!'); 

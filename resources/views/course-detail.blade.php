@@ -7,7 +7,7 @@
         @include('partial.navbar')
 
         <header class="header">
-            <img src="asset/course-detail-banner.png" alt="" class="header__banner">
+            <img src="../asset/course-detail-banner.png" alt="" class="header__banner">
             <div class="header__box header__box-course">
                 <h1 class="header__title header__title-course">Course Detail</h1>
             </div>
@@ -20,7 +20,7 @@
                 <div class="course-detail-desc">
                     <h2 class="course-detail-subtle">COURSE DETAIL</h2>
                     <h1 class="course-detail-title">{{ $course->title }}</h1>
-                    <img src="asset/course-detail.png" alt="aset">
+                    <img src="{{ asset('storage/thumbnails/products/'.$course->thumbnail) }}" alt="aset">
                     <p>
                         {{ $course->description }}
                     </p>
@@ -29,15 +29,11 @@
                     <h1>Courses Features</h1>
                     <div>
                         <span>Duration</span>
-                        <span>15 hour</span>
+                        <span>10 minutes</span>
                     </div>
                     <div>
                         <span>Skill Level</span>
                         <span>{{ $course->skillLevel }}</span>
-                    </div>
-                    <div>
-                        <span>Language</span>
-                        <span>{{ $course->languange }}</span>
                     </div>
                     <div>
                         <span>Instructur</span>
@@ -51,7 +47,7 @@
                         <span>Price</span>
                         <span class="course-detail-price">{{ $course->price }}</span>
                     </div>
-                    <a href="" class="course-detail-cta cta">Enroll Now</a>
+                    <a href="/course-checkout/{{$course->id}}" class="course-detail-cta cta">Enroll Now</a>
                 </div>
             </div>
         </section>
@@ -67,7 +63,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="" class="course-relate-link">
+                <a href="/course-checkout/{{ $course->id }}" class="course-relate-link">
                     <div class="course-relate-card">
                         <img src="asset/kelas-3.png" alt="" class="course-relate-img">
                         <div class="course-relate-desc">

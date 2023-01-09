@@ -21,6 +21,9 @@ use App\Http\Controllers\RegisterController;
 
 Route::get('/', [HomeController::class, 'index']);
 Route::resource('/course', CourseController::class);
+Route::get('/course-checkout', [CourseController::class, 'displayCourseCheckout']);
+Route::get('/course-payment', [CourseController::class, 'displayCoursePayment']);
+Route::get('/course-checkout-success', [CourseController::class, 'displayCourseSuccess']);
 
 Route::get('/login', [LoginController::class, 'index'])->middleware('guest');
 Route::post('/login', [LoginController::class, 'authenticate']);
@@ -36,4 +39,8 @@ Route::put('/user/{user}', [UserController::class, 'update']);
 Route::get('/gurutani/addclass', [GuruController::class, 'addclass']);
 Route::get('/gurutani/inbox', [GuruController::class, 'myinbox']);
 Route::get('/gurutani/setting', [GuruController::class, 'setting']);
+
 Route::get('/gurutani/login', [GuruController::class, 'loginGuru']);
+Route::post('/gurutani/login', [LoginController::class, 'authenticate']);
+Route::post('/gurutani/addclass', [CourseController::class, 'store']);
+Route::post('/logout', [LoginController::class, 'logout']);

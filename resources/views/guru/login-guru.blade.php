@@ -24,13 +24,14 @@ body {
             <img src="../asset/logoblack.svg" alt="Dunia Tani" class="register-login__logo">
             <div class="guru-login-form shadow-lg rounded border-3 border">
                 <h1 style="color: #44444; font-size: 25px;">Sign In Guru Tani</h1>
-                <h2 style="color: #939393; font-size: 16px; margin-top: 8px;">Register using personal data<br />appropiate</h2>
-                <form action="/login" class="form-login" method="post">
+                <h2 style="color: #939393; font-size: 16px; margin-top: 8px;">Register using personal
+                    data<br />appropiate</h2>
+                <form action="/gurutani/login" class="form-login" method="post">
                     @csrf
                     <label for="username">Username</label>
-                    <input style="padding-left: 16px" name="username-guru" type="text" placeholder="Enter your username">
+                    <input style="padding-left: 16px" name="username" type="text" placeholder="Enter your username">
                     <label for="password">Password</label>
-                    <input style="padding-left: 16px" name="password-guru" type="password" placeholder="Enter your password">
+                    <input style="padding-left: 16px" name="password" type="password" placeholder="Enter your password">
                     <button type="submit" name="login">Login</button>
 
                 </form>

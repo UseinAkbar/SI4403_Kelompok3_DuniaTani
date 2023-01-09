@@ -23,8 +23,8 @@ class RegisterController extends Controller
         ]);
         // dd('registrasi berhasil');
         $validated['password'] = Hash::make($validated['password']);
-        User::create($validated);
-
+        $validated['role'] = 'pelajar';
+        User::create($validated)->id;
         $request->session()->flash('success', 'Registrasi beres, Langsung gas dah login');
 
         return redirect('/login');

@@ -19,23 +19,6 @@
             </form>
             <div class="course-box">
                 <div class="course-sideFilter">
-                    <div class="course-sort">
-                        <h2>Sort</h2>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="new release" name="new-release"
-                                id="new-release">
-                            <label class="form-check-label" for="new-release">New Release</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="popular" name="popular" id="popular">
-                            <label class="form-check-label" for="popular">Popular</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="on promo" name="on-promo"
-                                id="on-promo">
-                            <label class="form-check-label" for="on-promo">On Promo</label>
-                        </div>
-                    </div>
                     <div class="course-type">
                         <h2>Type</h2>
                         <div class="form-check">
@@ -57,7 +40,8 @@
                     @foreach ($course as $crs)
                     <div class="course__card">
                         <!-- <a href="/course/{{ $crs->id }}"> -->
-                        <img src="asset/{{ $crs->thumbnail }}" alt="thumbnail" class="course__img">
+                        <img src="{{ asset('storage/thumbnails/products/'.$crs->thumbnail) }}" alt="thumbnail"
+                            class="course__img">
                         <h1>{{ $crs->title }}</h1>
                         <p>{{ Str::limit($crs->description) }}</p>
                         <div class="course__gutter"></div>

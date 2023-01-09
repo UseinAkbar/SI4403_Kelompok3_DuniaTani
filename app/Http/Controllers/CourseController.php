@@ -40,7 +40,25 @@ class CourseController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // video
+        $video = explode('.', $request->file('video')->getClientOriginalName())[0];
+        $video = $video . '-' . time() . '.' . $request->file('video')->extension();
+        $request->file('video')->storeAs('public/videos/', $video);
+        // image
+        $thumbnail = explode('.', $request->file('thumbnail')->getClientOriginalName())[0];
+        $thumbnail = $thumbnail . '-' . time() . '.' . $request->file('thumbnail')->extension();
+        $request->file('thumbnail')->storeAs('public/thumbnails/products/', $thumbnail);
+        Course::create([
+            'guruTani_id' => auth()->user()->id,
+            'title'=> $request->title,
+            'skillLevel'=> $request->skillLevel,
+            'description'=> $request->description,
+            'price'=> $request->price,
+            'title' => $request->title,
+            'video' => $video,
+            'thumbnail' => $thumbnail
+        ]);
+        return redirect('/gurutani/addclass');
     }
 
     /**
@@ -88,5 +106,29 @@ class CourseController extends Controller
     public function destroy(Course $course)
     {
         //
+    }
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  \App\Models\Course  $course
+     * @return \Illuminate\Http\Response
+     */
+    public function displayCourseCheckout(Course $course){
+        return view('course-checkout', [
+            'title' => 'Course Checkout',
+            'course' => $course
+        ]);
+    }
+
+    public function displayCoursePayment(){
+        return view('course-payment', [
+            'title' => 'Course Payment'
+        ]);
+    }
+
+    public function displayCourseSuccess(){
+        return view('course-success', [
+            'title' => 'Course Checkout Successful'
+        ]);
     }
 }

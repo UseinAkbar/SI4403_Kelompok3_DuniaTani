@@ -1,7 +1,7 @@
 <div class="sidebar-gurutani sidebar">
     <div class="sidebar-gurutani-profile sidebar-profile">
         <img src="../asset/user.png" alt="gurutani image">
-        <h1>Kresna Galuh</h1>
+        <h1>{{ Auth()->user()->name }}</h1>
         <p>Guru Tani</p>
     </div>
     <nav class="sidebar-gurutani-nav sidebar-nav">

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-    @include('partial.header')
+@include('partial.header')
+
 <body>
     <div class="app">
         @include('partial.navbar')
@@ -8,20 +9,20 @@
         <header class="checkout-header">
             <h1>Class Checkout</h1>
             <h2>
-                Join us in Premium class and build 
+                Join us in Premium class and build
                 an excellent farm
             </h2>
         </header>
         <section class="checkout-box">
             <div class="checkout-card course__card">
                 <img src="asset/kelas-3.png" alt="" class="course__img">
-                <h1>Monitor Hasil Pertanian Menggunakan Teknologi</h1>
-                <p>Memudahkan melihat hasil pertanian dengan menggunakan aplikasi yang terbaik di ciptakan oleh anak bangsa</p>
+                <h1>{{ $course->title }}</h1>
+                <p>{{ $course->description }}</p>
                 <div class="course__gutter"></div>
                 <div class="course__card-transaksi">
                     <div class="course__harga">
-                        <span class="course__harga-coret">Rp150.000</span>
-                        <h2 class="course__harga-asli">Rp125.000</h2>
+                        <span class="course__harga-coret">Rp100000</span>
+                        <h2 class="course__harga-asli">Rp{{ $course->price }}</h2>
                     </div>
                     <img src="asset/star.png" alt="" class="checkout-rating">
                 </div>
@@ -59,15 +60,15 @@
                         <h1>Payment Details</h1>
                         <div>
                             <p>Normal Price</p>
-                            <p class="checkout-payment-coret">Rp325.000</p>
+                            <p class="checkout-payment-coret">Rp100000</p>
                         </div>
                         <div>
                             <p>Class Price <span>Discount</span></p>
-                            <p>Rp200.000</p>
+                            <p>Rp80000</p>
                         </div>
                         <div>
                             <p>Total Price</p>
-                            <p class="checkout-payment-hargaAsli">Rp200.000</p>
+                            <p class="checkout-payment-hargaAsli">Rp{{ $course->price }}</p>
                         </div>
                     </div>
                     <div class="checkout-payment-bank">
@@ -89,7 +90,8 @@
                         <div>
                             <h1>Important information</h1>
                             <p>
-                                The class payment confirmation process will take around 20 minutes (from the WhatsApp message sent) if using the manual payment method. Please wait patiently and thank you.
+                                The class payment confirmation process will take around 20 minutes (from the WhatsApp
+                                message sent) if using the manual payment method. Please wait patiently and thank you.
                             </p>
                         </div>
                         <div>
@@ -105,4 +107,5 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

@@ -19,11 +19,10 @@ class CreateCoursesTable extends Migration
             $table->unsignedBigInteger('guruTani_id');
             $table->foreign('guruTani_id')->references('id')->on('gurutanis');
             $table->string('skillLevel');
-            $table->string('linkyt');
+            $table->string('video');
             $table->string('thumbnail');
             $table->string('description');
-            $table->string('languange');
-            $table->float('rating');
+            $table->float('rating')->nullable();
             $table->integer('price');
             $table->timestamps();
         });
