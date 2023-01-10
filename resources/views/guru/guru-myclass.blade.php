@@ -19,7 +19,7 @@
                 <div class="class-container dashboard__guru-myclass">
                     @foreach ($course as $ord)
                     <div class="course__card dashboard__guru-myclass-card">
-                        <img src="../asset/kelas-1.png" alt="thumbnail"
+                        <img src="{{ asset('storage/thumbnails/products/'.$ord->thumbnail) }}" alt="thumbnail"
                             class="course__img">
                         <h1>{{$ord->title}}</h1>
                         <p>{{Str::limit($ord->description)}}</p>
@@ -33,7 +33,8 @@
                             <form action="/gurutani/myclass/{{ $ord->id }}" method="post">
                                 @csrf
                                 @method('delete')
-                                <button class="course__card-cta dahsboard__guru-delete cta" type="submit" onclick="return confirm('yakin untuk menghapus course')">Delete</button>
+                                <button class="course__card-cta dahsboard__guru-delete cta" type="submit"
+                                    onclick="return confirm('yakin untuk menghapus course')">Delete</button>
                             </form>
                         </div>
                     </div>
