@@ -50,6 +50,7 @@ Route::put('/user/setting/{user}', [UserController::class, 'update']);
 
 Route::get('/gurutani/addclass', [GuruController::class, 'addclass']);
 Route::get('/gurutani/inbox', [GuruController::class, 'myinbox']);
+Route::put('/gurutani/inbox/{order}', [GuruController::class, 'update_status']);
 Route::get('/gurutani/setting', [GuruController::class, 'setting']);
 // Route::get('/gurutani/setting', [UserController::class, 'index']);
 Route::put('/gurutani/setting/{user}', [GuruController::class, 'update']);

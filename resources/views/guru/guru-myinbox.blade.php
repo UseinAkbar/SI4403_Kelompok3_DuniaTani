@@ -43,7 +43,11 @@
                             <td>{{ $ord->created_at }}</td>
                             <td><span class="bg-warning text-white order-status">{{ $ord->status }}</span></td>
                             <td class="order-action">
-                                <a href="" class="inbox-invoice cta">Confirm</a>
+                                <form action="/gurutani/inbox/{{ $ord->id }}" method="post">
+                                    @csrf
+                                    @method('put')
+                                    <button class="inbox-invoice cta" type="submit">Confirm</button>
+                                </form>
                                 <a href="" class="order-action-cta order-action-cta-secondary cta">Cancel</a>
                             </td>
                         </tr>

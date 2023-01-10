@@ -81,6 +81,23 @@ class GuruController extends Controller
         return redirect("/gurutani/setting");
     }
 
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \App\Models\User  $user
+     * @param  \App\Models\Gurutani  $user
+     * @return \Illuminate\Http\Response
+     */
+
+    public function update_status(Request $request, Order $order){
+        $order->update([
+            'status' => 'Verified'
+        ]);
+        $request->session()->flash('success', 'data berhasil diubah gan');
+        return redirect("/gurutani/inbox");
+    }
+
     // public function authenticate(Request $request){
     //     $credentials= $request->validate([
     //         'username'=>'required',
