@@ -526,20 +526,20 @@ body {
 
 .course__card-transaksi {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     grid-gap: 2rem;
     align-items: center;
 }
 
 .course__harga {
     display: flex;
-    flex-direction: column;
-    gap: 5px;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .course__harga-coret {
     text-decoration: line-through;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 500;
     color: #989b9e;
 }
@@ -552,6 +552,15 @@ body {
 
 .course__card-cta {
     font-size: 1.4rem;
+}
+
+.course__card-cta-secondary {
+    background-color: transparent;
+    color: #000;
+}
+
+.course__card-cta-secondary:hover {
+    color: #000;
 }
 
 .event {

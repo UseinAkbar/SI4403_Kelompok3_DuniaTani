@@ -55,15 +55,24 @@
                 and everyone around you, starting here
             </p>
             <div class="community-find-box community-feature-box">
-                <div class="community-find-card">
-                    
-                </div>
-                <div class="community-find-card">
-                    
-                </div>
-                <div class="community-find-card">
-                    
-                </div>
+                    <div class="event-card community-card">
+                        <img src="../asset/com-1.png" alt="">
+                        <h1>Platform Pengembangan Petani Muda</h1>
+                        <p>Platform edukasi untuk pendampingan dan pengembangan para petani muda Indonesia</p>
+                        <a href="https://www.instagram.com/akupetani.id/" class="cta" target="_blank">Join</a>
+                    </div>
+                    <div class="event-card community-card">
+                        <img src="../asset/com-2.jpg" alt="">
+                        <h1>Media Sharing Info Pertanian</h1>
+                        <p>Media sharing tentang hal-hal yang berkaitan dengan bidang pertanian dan perkebunan</p>
+                        <a href="https://www.instagram.com/agrotek.id/" class="cta" target="_blank">Join</a>
+                    </div>
+                    <div class="event-card community-card">
+                        <img src="../asset/com-3.jpg" alt="">
+                        <h1>Media Sharing Info Hidroponik</h1>
+                        <p>Media sharing tips dan tutorial yang berkaitan dengan bidang hidroponik dan info lainnya</p>
+                        <a href=" https://www.instagram.com/hidroponik.farm/" class="cta" target="_blank">Join</a>
+                    </div>
             </div>
         </section>
     </div>

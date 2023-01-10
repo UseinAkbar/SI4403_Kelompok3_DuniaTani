@@ -94,7 +94,7 @@
 }
 
 .community-card p {
-    font-size: 2rem;
+    font-size: 1.6rem !important;
     color: #848484;
 }
 
@@ -112,4 +112,14 @@
     color: #939393;
     text-align: center;
     width: 75%;
+}
+
+.community-card h1,
+.community-card p {
+    text-align: left;
+    width: unset;
+}
+
+.community-card .cta {
+    justify-self: stretch;
 }

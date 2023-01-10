@@ -22,15 +22,22 @@
             </form>
             <h1 class="event-subtle">Our Upcoming Events</h1>
             <div class="event-container">
-                <a href="" class="event-card-link">
                     <div class="event-card">
-                        <img src="asset/event-1.png" alt="">
-                        <h1>Pentingnya Penggunaan Teknolgi Pertanian</h1>
-                        <p>Menambahan wawasan mengenai pentingnya menggunakan teknologi pada pertanian untuk memudahkan petani</p>
+                        <img src="../asset/event-1.jpg" alt="">
+                        <h1>Gelar Produk Pertanian dan Olahan Pangan Bandung, Jawa Barat</h1>
+                        <p>Acara gelar produk pertanian yang menjual berbagai macam buah, sayur, produk pangan, produk perkebunan, makanan olahan, dll</p>
                         <span>Virtual Event</span>
                         <span>21 Jan 2023</span>
+                        <a href="" class="cta">See Detail</a>
                     </div>
-                </a>
+                    <div class="event-card">
+                        <img src="../asset/event-2.jpeg" alt="">
+                        <h1>Pasar Tani Goes to Mall by Kementrian Pertanian</h1>
+                        <p>Event tahunan yang diadakan Kementrian Pertanian untuk mengenalkan pasar tradisional ke mall-mall</p>
+                        <span>Virtual Event</span>
+                        <span>06 Feb 2023</span>
+                        <a href="" class="cta">See Detail</a>
+                    </div>
             </div>
         </section>
     </div>
