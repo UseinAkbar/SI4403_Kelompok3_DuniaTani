@@ -196,4 +196,22 @@ class CourseController extends Controller
             'title' => 'Course Checkout Successful'
         ]);
     }
+
+    public function displayclass(){
+        return view('guru/guru-myclass', [
+            'title' => 'My Registered Class'
+        ]);
+    }
+
+    public function editclass(){
+        return view('guru/guru-editclass', [
+            'title' => 'Esit a Class'
+        ]);
+    }
+
+    public function accessvideo(){
+        return view('course-access', [
+            'title' => 'Pentingnya Penggunaan Teknologi Pertanian'
+        ]);
+    }
 }

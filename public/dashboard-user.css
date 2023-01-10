@@ -74,13 +74,15 @@
     font-weight: 600;
 }
 
-.dashboard-input-grup input {
+.dashboard-input-grup input,
+.dashboard-input-grup textarea {
     border: 1px solid #939393;
     outline: none;
     padding: 1rem 2rem;
     border-radius: 6px;
     font-size: 1.6rem;
     font-weight: 500;
+    resize: none;
 }
 
 .dashboard-input-grup input::placeholder {

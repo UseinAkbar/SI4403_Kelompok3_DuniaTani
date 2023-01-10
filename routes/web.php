@@ -30,6 +30,7 @@ Route::post('/course-checkout/{course}', [CourseController::class, 'displayCours
 Route::get('/course-payment/{course}', [CourseController::class, 'displayCoursePayment']);
 Route::post('/course-payment/{course}', [CourseController::class, 'PaymentMethod']);
 Route::get('/course-checkout-success', [CourseController::class, 'displayCourseSuccess']);
+Route::get('/course-video', [CourseController::class, 'accessvideo']);
 
 
 // route for login register
@@ -58,6 +59,8 @@ Route::put('/gurutani/setting/{user}', [GuruController::class, 'update']);
 Route::get('/gurutani/login', [GuruController::class, 'loginGuru']);
 Route::post('/gurutani/login', [LoginController::class, 'authenticate']);
 Route::post('/gurutani/addclass', [CourseController::class, 'store']);
+Route::get('/gurutani/editclass', [CourseController::class, 'editclass']);
+Route::get('/gurutani/myclass', [CourseController::class, 'displayclass']);
 Route::post('/logout', [LoginController::class, 'logout']);
 
 

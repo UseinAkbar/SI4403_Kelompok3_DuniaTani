@@ -106,6 +106,10 @@
     color: #939393;
 }
 
+.course__card-link {
+    text-decoration: none;
+}
+
 .course-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

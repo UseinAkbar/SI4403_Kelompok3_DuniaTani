@@ -26,3 +26,33 @@
     text-decoration: underline;
     color: blue;
 }
+
+.dashboard__guru-myclass {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* .dashboard__guru-myclass-card {
+    padding: 2rem;
+}
+
+.dashboard__guru-myclass-card h1 {
+    font-size: 1.8rem;
+} */
+
+.dashboard__guru-myclass-card p {
+    font-size: 1.4rem;
+}
+
+.dashboard__guru-transaksi {
+    grid-template-columns: 1fr;
+}
+
+.dahsboard__guru-delete {
+    background-color: transparent;
+    color: #000;
+}
+
+.dahsboard__guru-delete:hover {
+    color: #000;
+}
+
