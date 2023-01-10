@@ -55,7 +55,7 @@
             <div class="course-relate-box">
                 <a href="" class="course-relate-link">
                     <div class="course-relate-card">
-                        <img src="asset/kelas-2.png" alt="" class="course-relate-img">
+                        <img src="../asset/kelas-2.png" alt="" class="course-relate-img">
                         <div class="course-relate-desc">
                             <h1>Pupuk Yang Tepat Untuk perkembangan tanaman</h1>
                             <p>Kualitas pupuk juga memiliki manfaat bagi pertumbuhan tanaman...</p>
@@ -64,7 +64,7 @@
                 </a>
                 <a href="/course-checkout/{{ $course->id }}" class="course-relate-link">
                     <div class="course-relate-card">
-                        <img src="asset/kelas-3.png" alt="" class="course-relate-img">
+                        <img src="../asset/kelas-3.png" alt="" class="course-relate-img">
                         <div class="course-relate-desc">
                             <h1>Monitor Hasil Pertanian Menggunakan Teknologi</h1>
                             <p>Memudahkan melihat hasil pertanian dengan menggunakan...</p>

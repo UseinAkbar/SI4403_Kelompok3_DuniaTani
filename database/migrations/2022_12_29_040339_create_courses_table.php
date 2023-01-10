@@ -17,7 +17,7 @@ class CreateCoursesTable extends Migration
             $table->id();
             $table->string('title');
             $table->unsignedBigInteger('guruTani_id');
-            $table->foreign('guruTani_id')->references('id')->on('gurutanis');
+            $table->foreign('guruTani_id')->references('id')->on('gurutanis')->onDelete('cascade')->onUpdate('cascade');
             $table->string('skillLevel');
             $table->string('video');
             $table->string('thumbnail');

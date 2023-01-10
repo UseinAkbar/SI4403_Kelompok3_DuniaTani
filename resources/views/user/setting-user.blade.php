@@ -14,13 +14,13 @@
                 <form action="/user/setting/{{ auth()->user()->id }}" class="dashboard-form">
                     @csrf
                     @method("PUT")
-                    <div class="setting-subtle dashboard-subtle">
+                    {{-- <div class="setting-subtle dashboard-subtle">
                         <img src="../asset/edit.svg" alt="">
                         Edit Profile
                     </div>
                     <img src="../asset/user.png" alt="">
                     <input type="file" name="photo" id="photo" class="setting-photo" accept="image/*"
-                        placeholder="Change photo" class="setting-edit-photo">
+                        placeholder="Change photo" class="setting-edit-photo"> --}}
 
                     <div class="setting-input-grup dashboard-input-grup">
                         <label for="username">Username (Max. 50 characters)</label>

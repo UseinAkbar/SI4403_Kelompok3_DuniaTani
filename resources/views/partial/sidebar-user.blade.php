@@ -1,6 +1,6 @@
 <div class="sidebar-user sidebar">
     <div class="sidebar-user-profile sidebar-profile">
-        <img src="../asset/user.png" alt="user image">
+        {{-- <img src="../asset/user.png" alt="user image"> --}}
         <h1>{{ auth()->user()->username }}</h1>
         <p>Student</p>
     </div>

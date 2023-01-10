@@ -38,49 +38,23 @@
                 </div>
                 <div class="course-content">
                     @foreach ($course as $crs)
-                    <a href="/course/{{ $crs->id }}" class="course__card-link">
-                        <div class="course__card">
-                            <img src="{{ asset('storage/thumbnails/products/'.$crs->thumbnail) }}" alt="thumbnail"
-                                class="course__img">
-                            <h1>{{ $crs->title }}</h1>
-                            <p>{{ Str::limit($crs->description) }}</p>
-                            <div class="course__gutter"></div>
-                            <div class="course__card-transaksi">
-                                <div class="course__harga">
-                                    <span class="course__harga-coret">Rp100000</span>
-                                    <h2 class="course__harga-asli">Rp{{ $crs->price }}</h2>
+                        <a href="/course/{{ $crs->id }}" class="course__card-link">
+                            <div class="course__card">
+                                <img src="{{ asset('storage/thumbnails/products/'.$crs->thumbnail) }}" alt="thumbnail"
+                                    class="course__img">
+                                <h1>{{ $crs->title }}</h1>
+                                <p>{{ Str::limit($crs->description) }}</p>
+                                <div class="course__gutter"></div>
+                                <div class="course__card-transaksi">
+                                    <div class="course__harga">
+                                        <span class="course__harga-coret">Rp100000</span>
+                                        <h2 class="course__harga-asli">Rp{{ $crs->price }}</h2>
+                                    </div>
+                                    <a href="/course-checkout/{{ $crs->id }}" class="course__card-cta cta">Buy Class</a>
                                 </div>
-                                <a href="/course-checkout/{{ $crs->id }}" class="course__card-cta cta">Buy Class</a>
                             </div>
-                        </div>
-                    </a>
+                        </a>
                     @endforeach
-                    <!-- <div class="course__card">
-                        <img src="asset/kelas-2.png" alt="" class="course__img">
-                        <h1>Monitor Hasil Pertanian Menggunakan Teknologi</h1>
-                        <p>Memudahkan melihat hasil pertanian dengan menggunakan aplikasi yang terbaik di ciptakan oleh anak bangsa</p>
-                        <div class="course__gutter"></div>
-                        <div class="course__card-transaksi">
-                            <div class="course__harga">
-                                <span class="course__harga-coret">Rp150.000</span>
-                                <h2 class="course__harga-asli">Rp125.000</h2>
-                            </div>
-                            <a href="" class="course__card-cta cta">Buy Class</a>
-                        </div>
-                    </div>
-                    <div class="course__card">
-                        <img src="asset/kelas-3.png" alt="" class="course__img">
-                        <h1>Pupuk Yang Tepat Untuk perkembangan tanaman</h1>
-                        <p>Kualitas pupuk juga memiliki manfaat bagi pertumbuhan tanaman dan menutrisi tanaman agar tumbuh subur</p>
-                        <div class="course__gutter"></div>
-                        <div class="course__card-transaksi">
-                            <div class="course__harga">
-                                <span class="course__harga-coret">Rp150.000</span>
-                                <h2 class="course__harga-asli">Rp125.000</h2>
-                            </div>
-                            <a href="" class="course__card-cta cta">Buy Class</a>
-                        </div>
-                    </div> -->
                 </div>
             </div>
         </section>

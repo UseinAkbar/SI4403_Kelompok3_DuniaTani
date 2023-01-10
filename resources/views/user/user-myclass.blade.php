@@ -18,12 +18,14 @@
 
                 <div class="class-container">
                     @foreach ($order as $ord)
+                    @if($ord->status == "Verified")
                     <div class="class-card">
                         <img src="{{ asset('storage/thumbnails/products/'. $ord->cover) }}" alt="">
                         <h1>{{ $ord->title }}</h1>
                         <p>{{ $ord->created_at }}</p>
-                        <a href="" class="class-cta cta">Start Learn</a>
+                        <a href="/course-video" class="class-cta cta">Start Learn</a>
                     </div>
+                    @endif
                     @endforeach
                 </div>
 

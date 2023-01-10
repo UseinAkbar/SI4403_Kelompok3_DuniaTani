@@ -17,7 +17,7 @@
                         <img src="../asset/join.svg" alt="">
                         Join Group Konsultasi
                     </a>
-                    <a href="../asset/video.mp4" download="" class="sidebar-cta">
+                    <a href="{{ asset('storage/videos/'.$order->video) }}" download="{{ $order->title }}}" class="sidebar-cta">
                         <img src="../asset/download.svg" alt="">
                         Download Materi
                     </a>
@@ -38,13 +38,13 @@
                         poster="../asset/course-banner.png"
                         data-setup="{}"
                     >
-                        <source src="../asset/video.mp4" type="video/mp4" />
+                        <source src="{{ asset('storage/videos/'.$order->video) }}" type="video/mp4" />
                     </video>
                 </div>
                 <div class="video-desc">
-                    <h1>Pentingnya Penggunaan Teknologi Pertanian</h1>
+                    <h1>{{$order->title}}</h1>
                     <div class="video-gutter"></div>
-                    <p>Memudahkan melihat hasil pertanian dengan menggunakan aplikasi yang terbaik di ciptakan oleh anak bangsa</p>
+                    <p>{{$order->course->description}}</p>
                 </div>
             </div>
         </div>

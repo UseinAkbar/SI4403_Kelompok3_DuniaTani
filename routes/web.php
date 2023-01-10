@@ -52,6 +52,7 @@ Route::put('/user/setting/{user}', [UserController::class, 'update']);
 Route::get('/gurutani/addclass', [GuruController::class, 'addclass']);
 Route::get('/gurutani/inbox', [GuruController::class, 'myinbox']);
 Route::put('/gurutani/inbox/{order}', [GuruController::class, 'update_status']);
+// Route::put('/gurutani/inbox/{order}', [GuruController::class, 'update_status2']);
 Route::get('/gurutani/setting', [GuruController::class, 'setting']);
 // Route::get('/gurutani/setting', [UserController::class, 'index']);
 Route::put('/gurutani/setting/{user}', [GuruController::class, 'update']);
@@ -60,7 +61,9 @@ Route::get('/gurutani/login', [GuruController::class, 'loginGuru']);
 Route::post('/gurutani/login', [LoginController::class, 'authenticate']);
 Route::post('/gurutani/addclass', [CourseController::class, 'store']);
 Route::get('/gurutani/editclass', [CourseController::class, 'editclass']);
+Route::put('/gurutani/editclass/{course}', [CourseController::class, 'update']);
 Route::get('/gurutani/myclass', [CourseController::class, 'displayclass']);
+Route::delete('/gurutani/myclass/{course}', [CourseController::class, 'destroy']);
 Route::post('/logout', [LoginController::class, 'logout']);
 
 

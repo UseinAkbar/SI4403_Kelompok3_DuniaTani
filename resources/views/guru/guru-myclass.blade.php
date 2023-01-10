@@ -17,21 +17,27 @@
                 </div>
 
                 <div class="class-container dashboard__guru-myclass">
+                    @foreach ($course as $ord)
                     <div class="course__card dashboard__guru-myclass-card">
                         <img src="../asset/kelas-1.png" alt="thumbnail"
                             class="course__img">
-                        <h1>Pentingnya Penggunaan Teknolgi Pertanian</h1>
-                        <p>Menambahan wawasan mengenai pentingnya menggunakan teknologi pada pertanian untuk memudahkan petani</p>
+                        <h1>{{$ord->title}}</h1>
+                        <p>{{Str::limit($ord->description)}}</p>
                         <div class="course__gutter"></div>
                         <div class="course__card-transaksi dashboard__guru-transaksi">
                             <div class="course__harga">
-                                <span class="course__harga-coret">Rp150.000</span>
-                                <h2 class="course__harga-asli">Rp100.000</h2>
+                                <span class="course__harga-coret">Rp100000</span>
+                                <h2 class="course__harga-asli">Rp{{$ord->price}}</h2>
                             </div>
-                            <a href="/course/" class="course__card-cta cta">Edit</a>
-                            <a href="/course-checkout/" class="course__card-cta dahsboard__guru-delete cta">Delete</a>
+                            <a href="/gurutani/editclass" class="course__card-cta cta">Edit</a>
+                            <form action="/gurutani/myclass/{{ $ord->id }}" method="post">
+                                @csrf
+                                @method('delete')
+                                <button class="course__card-cta dahsboard__guru-delete cta" type="submit" onclick="return confirm('yakin untuk menghapus course')">Delete</button>
+                            </form>
                         </div>
                     </div>
+                    @endforeach
                 </div>
 
             </div>

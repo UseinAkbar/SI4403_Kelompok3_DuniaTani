@@ -43,12 +43,18 @@
                             <td>{{ $ord->created_at }}</td>
                             <td><span class="bg-warning text-white order-status">{{ $ord->status }}</span></td>
                             <td class="order-action">
+                                @if ($ord->status != 'Verified' || $ord->status != 'Rejected')
                                 <form action="/gurutani/inbox/{{ $ord->id }}" method="post">
                                     @csrf
                                     @method('put')
-                                    <button class="inbox-invoice cta" type="submit">Confirm</button>
+                                    <button class="inbox-invoice cta bg-succes" name="Verified" type="submit">Confirm</button>
                                 </form>
-                                <a href="" class="order-action-cta order-action-cta-secondary cta">Cancel</a>
+                                <form action="/gurutani/inbox/{{ $ord->id }}" method="post">
+                                    @csrf
+                                    @method('put')
+                                    <button class="inbox-invoice cta bg-danger" name="Rejected" type="submit">Rejected</button>
+                                </form>
+                                @endif
                             </td>
                         </tr>
                         @endforeach

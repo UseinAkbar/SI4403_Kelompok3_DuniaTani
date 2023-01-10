@@ -12,7 +12,6 @@
         <div class="dropdown" id="">
             <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
-                <img src="asset/avatar.png" alt="">
                 {{ auth()->user()->username }}
             </button>
             <ul class="dropdown-menu">
@@ -36,7 +35,6 @@
         <div class="dropdown" id="">
             <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
-                <img src="asset/avatar.png" alt="">
                 {{ auth()->user()->username }}
             </button>
             <ul class="dropdown-menu">

@@ -28,6 +28,6 @@ class Course extends Model
         return $this->belongsTo(Gurutani::class, 'guruTani_id', 'id');
     }
     public function order () {
-        return $this->belongsTo(Order::class, 'course_id', 'id');
+        return $this->belongsTo(Order::class, 'id', 'course_id');
     }
 }

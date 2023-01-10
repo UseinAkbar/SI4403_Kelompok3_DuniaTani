@@ -98,6 +98,15 @@ class GuruController extends Controller
         return redirect("/gurutani/inbox");
     }
 
+    public function update_status2(Request $request, Order $order){
+        $order->update([
+            'status' => 'Rejected'
+        ]);
+        $request->session()->flash('success', 'data berhasil diubah gan');
+        return redirect("/gurutani/inbox");
+    }
+
+
     // public function authenticate(Request $request){
     //     $credentials= $request->validate([
     //         'username'=>'required',
