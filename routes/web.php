@@ -26,21 +26,27 @@ Route::get('/', [HomeController::class, 'index']);
 Route::resource('/course', CourseController::class);
 // Route::resource('/course-checkout', PaymentController::class);
 Route::get('/course-checkout/{course}', [CourseController::class, 'displayCourseCheckout']);
-Route::post('/course-checkout/{$course->id}', [CourseController::class, 'displayCourseCheckout']);
-Route::post('/course-payment/{$course->id}', [CourseController::class, 'displayCourseCheckout']);
-Route::get('/course-payment/{$course->id}', [CourseController::class, 'displayCoursePayment']);
+Route::post('/course-checkout/{course}', [CourseController::class, 'displayCourseCheckout']);
+Route::get('/course-payment/{course}', [CourseController::class, 'displayCoursePayment']);
+Route::post('/course-payment/{course}', [CourseController::class, 'PaymentMethod']);
 Route::get('/course-checkout-success', [CourseController::class, 'displayCourseSuccess']);
 
+
+// route for login register
 Route::get('/login', [LoginController::class, 'index'])->middleware('guest');
 Route::post('/login', [LoginController::class, 'authenticate']);
 Route::post('/logout', [LoginController::class, 'logout']);
-
 Route::get('/register', [RegisterController::class, 'index']);
 Route::post('/register', [RegisterController::class, 'store']);
 
-
+// route for user pelajar
 Route::get('/user', [UserController::class, 'index']);
 Route::put('/user/{user}', [UserController::class, 'update']);
+Route::get('/user/order', [UserController::class, 'myorder']);
+Route::get('/user/class', [UserController::class, 'myclass']);
+Route::get('/user/setting', [UserController::class, 'setting']);
+Route::put('/user/setting/{user}', [UserController::class, 'update']);
+
 
 Route::get('/gurutani/addclass', [GuruController::class, 'addclass']);
 Route::get('/gurutani/inbox', [GuruController::class, 'myinbox']);
@@ -52,6 +58,7 @@ Route::get('/gurutani/login', [GuruController::class, 'loginGuru']);
 Route::post('/gurutani/login', [LoginController::class, 'authenticate']);
 Route::post('/gurutani/addclass', [CourseController::class, 'store']);
 Route::post('/logout', [LoginController::class, 'logout']);
+
 
 Route::get('/event', [EventController::class, 'displayEvent']);
 Route::get('/community', [CommunityController::class, 'displayCommunity']);

@@ -29,8 +29,9 @@
                     </div>
                     <div class="addclass-input-grup dashboard-input-grup">
                         <label for="description">Course Description</label>
-                        <input type="text" name="description" id="description" value=""
-                            placeholder="Enter course description" required>
+                        <textarea name="description" class="" id="description" cols="30" rows="10"></textarea>
+                        <!-- <input type="text" name="description" id="description" value=""
+                            placeholder="Enter course description" required> -->
                     </div>
                     <div class="addclass-input-grup dashboard-input-grup">
                         <label for="harga">Course Price</label>

@@ -47,11 +47,11 @@
                     </div>
                     <div class="setting-input-grup dashboard-input-grup">
                         <label for="pass">New Password (at least 6 characters)</label>
-                        <input type="password" name="pass" id="pass" value="" placeholder="Enter your password">
+                        <input type="password" name="password" id="pass" value="" placeholder="Enter your password">
                     </div>
                     <div class="setting-input-grup dashboard-input-grup">
                         <label for="new-pass">Confirm New Password</label>
-                        <input type="password" name="new-pass" id="new-pass" value=""
+                        <input type="password" name="cpassword" id="new-pass" value=""
                             placeholder="Confirm your password">
                     </div>
                     <button class="setting-cta cta" type="submit">Save Profile</button>

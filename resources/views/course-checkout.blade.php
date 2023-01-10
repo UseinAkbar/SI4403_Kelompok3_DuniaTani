@@ -64,7 +64,7 @@
                         </div>
                         <div>
                             <p>Class Price <span>Discount</span></p>
-                            <p>Rp80000</p>
+                            <p>Rp{{ 100000 - $course->price }}</p>
                         </div>
                         <div>
                             <p>Total Price</p>
@@ -74,17 +74,18 @@
                     <div class="checkout-payment-bank">
                         <h1>Payment Transfer</h1>
                         <div class="checkout-payment-bank-box">
-                            <img src="../asset/bni.svg" alt="">
+                            <img src="../asset/bni.svg" alt="bank bni">
                             <p>PT Dunia Tani Indonesia (a/n Kemal Aziz)</p>
                             <span>0280256315</span>
                         </div>
                         <div class="checkout-payment-bank-box">
-                            <img src="../asset/mandiri.svg" alt="">
+                            <img src="../asset/mandiri.svg" alt="bank mandiri">
                             <p>PT Dunia Tani Indonesia (a/n Rafid Fadhil)</p>
                             <span>0280256315</span>
                         </div>
                         <p class="checkout-payment-ask">Already made payment?</p>
-                        <a href="" class="checkout-payment-bank-cta cta">Verification Payment</a>
+                        <a href="/course-payment/{{ $course->id }}" class="checkout-payment-bank-cta cta">Verification
+                            Payment</a>
                     </div>
                     <div class="checkout-information">
                         <div>
@@ -96,7 +97,8 @@
                         </div>
                         <div>
                             <h1>Need help? Contact us :</h1>
-                            <a href="" class="checkout-information-cta cta">Contact Admin</a>
+                            <a href="/course-payment/{{ $course->id }}" class="checkout-information-cta cta">Contact
+                                Admin</a>
                         </div>
                     </div>
                 </div>

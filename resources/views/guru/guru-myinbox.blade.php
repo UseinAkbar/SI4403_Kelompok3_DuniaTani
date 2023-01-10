@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-    @include('partial.header')
+@include('partial.header')
+
 <body>
     <div class="app">
         @include('partial.navbar')
@@ -28,6 +29,7 @@
                         </tr>
                     </thead>
                     <tbody>
+                        @foreach ($order as $ord)
                         <tr>
                             <td>1</td>
                             <td><a href="" class="inbox-idclass">a10</a></td>
@@ -37,15 +39,17 @@
                                     <img src="../asset/bukti-tf.jpg" alt="" class="inbox-img">
                                 </a>
                             </td>
-                            <td>Rp200.000</td>
-                            <td>2022-01-10</td>
-                            <td><span class="bg-warning text-white order-status">pending</span></td>
+                            <td>{{ $ord->price }}</td>
+                            <td>{{ $ord->created_at }}</td>
+                            <td><span class="bg-warning text-white order-status">{{ $ord->status }}</span></td>
                             <td class="order-action">
                                 <a href="" class="inbox-invoice cta">Confirm</a>
                                 <a href="" class="order-action-cta order-action-cta-secondary cta">Cancel</a>
                             </td>
                         </tr>
-                        <tr>
+                        @endforeach
+
+                        <!-- <tr>
                             <td>2</td>
                             <td><a href="" class="inbox-idclass">b20</a></td>
                             <td>4</td>
@@ -90,7 +94,7 @@
                             <td class="order-action">
                                 <a href="" class="inbox-invoice cta">Delete</a>
                             </td>
-                        </tr>
+                        </tr> -->
                     </tbody>
                 </table>
             </div>
@@ -101,4 +105,5 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

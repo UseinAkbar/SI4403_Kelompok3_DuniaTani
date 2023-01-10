@@ -28,10 +28,6 @@
                 <div class="course-detail-feature">
                     <h1>Courses Features</h1>
                     <div>
-                        <span>Duration</span>
-                        <span>10 minutes</span>
-                    </div>
-                    <div>
                         <span>Skill Level</span>
                         <span>{{ $course->skillLevel }}</span>
                     </div>
@@ -40,14 +36,17 @@
                         <span>{{ $course->gurutani->name }}</span>
                     </div>
                     <div>
-                        <span>Rating</span>
-                        <span>{{ $course->rating }}</span>
+                        <span>Type</span>
+                        <span>{{ $course->type }}</span>
                     </div>
                     <div>
                         <span>Price</span>
                         <span class="course-detail-price">{{ $course->price }}</span>
                     </div>
+                    @if(auth()->check() && auth()->user()->role === "gurutani" )
+                    @else
                     <a href="/course-checkout/{{ $course->id }}" class="course-detail-cta cta">Enroll Now</a>
+                    @endif
                 </div>
             </div>
         </section>

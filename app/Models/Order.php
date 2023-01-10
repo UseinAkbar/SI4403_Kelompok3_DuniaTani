@@ -6,14 +6,13 @@ use App\Models\Gurutani;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class Course extends Model
+class Order extends Model
 {
     use HasFactory;
-    
-    protected $table = "courses";
+    protected $table = "order";
 
     protected $fillable =[
-        'id','title','guruTani_id', 'skillLevel','video', 'description','rating','price','type','created_at' ,'thumbnail'
+        'id','user_id','guruTani_id', 'course_id','ktp', 'status','evidence','cover','title','price','type','created_at'
     ];
 
 
@@ -21,13 +20,14 @@ class Course extends Model
         'created_at' => 'datetime',
         'updated_at' => 'datetime'
     ];
+
     public function users(){
         return $this->belongsTo('App\Models\User');
     }
     public function gurutani () {
         return $this->belongsTo(Gurutani::class, 'guruTani_id', 'id');
     }
-    public function order () {
-        return $this->belongsTo(Order::class, 'course_id', 'id');
+    public function course () {
+        return $this->hasMany(Course::class, 'course_id', 'id');
     }
 }

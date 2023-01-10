@@ -21,9 +21,10 @@ class CreateCoursesTable extends Migration
             $table->string('skillLevel');
             $table->string('video');
             $table->string('thumbnail');
-            $table->string('description');
+            $table->text('description');
             $table->float('rating')->nullable();
             $table->integer('price');
+            $table->string('type');
             $table->timestamps();
         });
     }

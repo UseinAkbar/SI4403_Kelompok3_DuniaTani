@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Models\Order;
 use App\Models\Course;
 use Laravel\Sanctum\HasApiTokens;
 use Illuminate\Notifications\Notifiable;
@@ -46,5 +47,8 @@ class Gurutani extends Authenticatable
 
     public function course () {
         return $this->hasMany(Course::class);
+    }
+    public function order () {
+        return $this->hasMany(Order::class);
     }
 }

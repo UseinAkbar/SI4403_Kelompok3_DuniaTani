@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-    @include('partial.header')
+@include('partial.header')
+
 <body>
     <div class="app">
         @include('partial.navbar')
@@ -28,32 +29,22 @@
                         </tr>
                     </thead>
                     <tbody>
+                        @foreach ($order as $ord)
                         <tr>
                             <td>1</td>
-                            <td><img src="../asset/kelas-1.png" class="order-cover" alt=""></td>
-                            <td class="order-name">Pentingnya Penggunaan Teknologi Pertanian</td>
-                            <td>Premium</td>
-                            <td>Rp200.000</td>
-                            <td>2022-01-10</td>
-                            <td><span class="bg-warning text-white order-status">on check</span></td>
+                            <td><img src="{{ asset('storage/thumbnails/products/'. $ord->cover) }}" class="order-cover"
+                                    alt=""></td>
+                            <td class="order-name">{{ $ord->title }}</td>
+                            <td>{{ $ord->type }}</td>
+                            <td>{{ $ord->price }}</td>
+                            <td>{{ $ord->created_at }}</td>
+                            <td><span class="bg-warning text-white order-status">{{ $ord->status }}</span></td>
                             <td class="order-action">
                                 {{-- <a href="" class="order-action-cta cta">Go to class</a> --}}
                                 <a href="" class="order-action-cta order-action-cta-secondary cta">Detail class</a>
                             </td>
                         </tr>
-                        <tr>
-                            <td>2</td>
-                            <td><img src="../asset/kelas-2.png" class="order-cover" alt=""></td>
-                            <td class="order-name">Pupuk Yang Tepat Untuk perkembangan tanaman</td>
-                            <td>Premium</td>
-                            <td>Rp200.000</td>
-                            <td>2022-01-16</td>
-                            <td><span class="bg-success text-white order-status">verified</span></td>
-                            <td class="order-action">
-                                <a href="/user/class" class="order-action-cta cta">Go to class</a>
-                                <a href="" class="order-action-cta order-action-cta-secondary cta">Detail class</a>
-                            </td>
-                        </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>
@@ -64,4 +55,5 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

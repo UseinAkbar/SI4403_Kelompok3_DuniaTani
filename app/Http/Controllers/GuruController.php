@@ -2,15 +2,19 @@
 
 namespace App\Http\Controllers;
 use App\Models\User;
+use App\Models\Order;
 use App\Models\Gurutani;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 
 class GuruController extends Controller
 {
     public function myinbox(){
+        $order = Order::where('guruTani_id', auth()->user()->id)->get();
         return view('guru/guru-myinbox', [
-            'title' => 'My Inbox Order'
+            'title' => 'My Inbox Order',
+            'order'=>$order
         ]);
     }
 

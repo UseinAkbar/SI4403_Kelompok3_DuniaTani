@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-    @include('partial.header')
+@include('partial.header')
+
 <body>
     <div class="app">
         @include('partial.navbar')
@@ -16,26 +17,16 @@
                 </div>
 
                 <div class="class-container">
+                    @foreach ($order as $ord)
                     <div class="class-card">
-                        <img src="../asset/kelas-2.png" alt="">
-                        <h1>Pupuk yang tepat Untuk perkembangan tanaman</h1>
-                        <span>Progress learn :</span>
-                        <div class="progress" style="height: 20px;">
-                            <div class="progress-bar bg-success" role="progressbar" style="width: 20%;" aria-valuenow="20%" aria-valuemin="0" aria-valuemax="100">20%</div>
-                        </div>
-                        <a href="" class="class-cta cta">Continue Learn</a>
-                    </div>
-                    <div class="class-card">
-                        <img src="../asset/kelas-1.png" alt="">
-                        <h1>Pentingnya Penggunaan Teknologi Pertanian</h1>
-                        <span>Progress learn :</span>
-                        <div class="progress" style="height: 20px;">
-                            <div class="progress-bar bg-success" role="progressbar" style="width: 0%;" aria-valuenow="0%" aria-valuemin="0" aria-valuemax="100">0%</div>
-                        </div>
+                        <img src="{{ asset('storage/thumbnails/products/'. $ord->cover) }}" alt="">
+                        <h1>{{ $ord->title }}</h1>
+                        <p>{{ $ord->created_at }}</p>
                         <a href="" class="class-cta cta">Start Learn</a>
                     </div>
+                    @endforeach
                 </div>
-                
+
             </div>
         </div>
 
@@ -44,4 +35,5 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
