@@ -1,0 +1,84 @@
+.event-header {
+    height: unset;
+}
+
+.event__box {
+    text-align: left;
+    justify-items: start;
+    justify-self: start;
+    padding: 0 9rem;
+}
+
+.event__box h2 {
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+.event__box h1 {
+    font-size: 3.8rem;
+    font-weight: 600;
+}
+
+.event__box p {
+    font-size: 2rem;
+}
+
+.event-detail {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: min-content;
+    grid-gap:6rem;
+    padding: 5rem 9rem 7rem;
+    margin-top: -9rem;
+}
+
+.event-subtle {
+    font-size: 3.8rem;
+    font-weight: 600;
+    color: #000;
+}
+
+.event-container {
+    display: grid;
+    grid-template-columns: repeat(3, 32rem);
+    grid-auto-rows: min-content;
+    grid-gap: 3rem;
+}
+
+.event-card-link {
+    text-decoration: none;
+}
+
+.event-card:hover img {
+    transform: scale(1.1) rotate(5deg);
+    overflow: hidden;
+}
+
+.event-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: min-content;
+    grid-gap: 2rem;
+    padding: 2rem 3rem;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.event-card img {
+    width: 100%;
+    height: 14.6rem;
+    object-fit: cover;
+    transition: .2s ease;
+}
+
+.event-card h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #0A0A0A;
+}
+
+.event-card :where(p, span) {
+    font-size: 1.4rem;
+    color: #989B9E;
+    text-align: justify;
+}
